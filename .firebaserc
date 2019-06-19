@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-pay-stat": {
+      "hosting": {
+        "payPage": [
+          "angular-pay-stat"
+        ]
+      }
+    }
+  }
+}

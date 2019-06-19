@@ -10,13 +10,18 @@ import {RouterModule} from '@angular/router';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FormsModule} from '@angular/forms';
 import {ChartsModule} from 'ng2-charts';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
@@ -29,7 +34,7 @@ import {ChartsModule} from 'ng2-charts';
     FlexLayoutModule,
     RouterModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,13 +21,14 @@
     </mat-toolbar>
 
     <div class="app-container">
-      <div style="display: block;">
-        <canvas baseChart
-                [data]="doughnutChartData"
-                [labels]="doughnutChartLabels"
-                [chartType]="doughnutChartType">
-        </canvas>
-      </div>
+<!--      <div style="display: block;">-->
+<!--        <canvas baseChart-->
+<!--                [data]="doughnutChartData"-->
+<!--                [labels]="doughnutChartLabels"-->
+<!--                [chartType]="doughnutChartType">-->
+<!--        </canvas>-->
+<!--      </div>-->
+      <router-outlet></router-outlet>
       <ng-content></ng-content>
     </div>
   </mat-sidenav-content>
